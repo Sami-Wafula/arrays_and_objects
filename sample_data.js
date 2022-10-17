@@ -1,4 +1,4 @@
-const sampleData=[
+const workers=[
     {
       "id": 1,
       "name": "Leanne Graham",
@@ -229,10 +229,19 @@ const sampleData=[
         "bs": "target end-to-end models"
       }
     }
-  ]
+  ];
 
 // delete id
 
-const deleteId = (delete sampleData.id);
+// const deleteId = (delete workers.id);
 
-console.log(sampleData) //logs 'true'
+// console.log(workers) //logs 'true'
+
+//find worker
+
+let worker = workers.find(element=>element.company.name == "Robel-Corkery")
+console.log(worker)
+
+
+
+
