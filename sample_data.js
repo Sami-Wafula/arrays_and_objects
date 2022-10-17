@@ -231,37 +231,37 @@ const workers=[
     }
   ];
 
-// delete id
+//delete id
 
-// const deleteId = (delete workers.id);
+const deleteId = (delete workers.id);
 
-// console.log(workers) //logs 'true'
+console.log(workers) //logs 'true'
 
 //find worker
 
-// let worker = workers.find(element=>element.company.name == "Robel-Corkery")
-// console.log(worker)
+let worker = workers.find(element=>element.company.name == "Robel-Corkery")
+console.log(worker)
 
-// //sort workers by username
+//sort workers by username
 
-// const sorted = workers.sort((a,b)=> {
-//   return a.username.localeCompare(b.username)
-// })
+const sorted = workers.sort((a,b)=> {
+  return a.username.localeCompare(b.username)
+})
 
-// console.log(sorted)
+console.log(sorted)
 
-// // workers whose lat is greater than zero
-// let greaterThanZero = workers.filter(user => user.address.geo.lat > 0)
-// console.log(greaterThanZero)
+// workers whose lat is greater than zero
+let greaterThanZero = workers.filter(user => user.address.geo.lat > 0)
+console.log(greaterThanZero)
 
-// // add property
+// add property
 
-// let img = workers.map((worker)=>{
-//   return {
-//     ...worker, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
-//   }
-// })
-// console.log(img)
+let img = workers.map((worker)=>{
+  return {
+    ...worker, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+  }
+})
+console.log(img)
 
 // remove user "Elwyn.Skiles"
 let removeUser = workers.findIndex(worker=>worker.username == "Elwyn.Skiles")
