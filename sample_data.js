@@ -231,3 +231,8 @@ const sampleData=[
     }
   ]
 
+// delete id
+
+const deleteId = (delete sampleData.id);
+
+console.log(sampleData) //logs 'true'
