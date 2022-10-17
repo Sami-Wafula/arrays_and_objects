@@ -250,6 +250,13 @@ const workers=[
 
 // console.log(sorted)
 
-// workers whose lat is greater than zero
-let greaterThanZero = workers.filter(user => user.address.geo.lat > 0)
-console.log(greaterThanZero)
+// // workers whose lat is greater than zero
+// let greaterThanZero = workers.filter(user => user.address.geo.lat > 0)
+// console.log(greaterThanZero)
+
+let img = workers.map((worker)=>{
+  return {
+    ...worker, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+  }
+})
+console.log(img)
