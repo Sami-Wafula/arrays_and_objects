@@ -239,9 +239,16 @@ const workers=[
 
 //find worker
 
-let worker = workers.find(element=>element.company.name == "Robel-Corkery")
-console.log(worker)
+// let worker = workers.find(element=>element.company.name == "Robel-Corkery")
+// console.log(worker)
 
+//sort users by username
+
+const sorted = workers.sort((a,b)=> {
+  return a.username.localeCompare(b.username)
+})
+
+console.log(sorted)
 
 
 
