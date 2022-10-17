@@ -254,9 +254,16 @@ const workers=[
 // let greaterThanZero = workers.filter(user => user.address.geo.lat > 0)
 // console.log(greaterThanZero)
 
-let img = workers.map((worker)=>{
-  return {
-    ...worker, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
-  }
-})
-console.log(img)
+// // add property
+
+// let img = workers.map((worker)=>{
+//   return {
+//     ...worker, image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+//   }
+// })
+// console.log(img)
+
+// remove user "Elwyn.Skiles"
+let removeUser = workers.findIndex(worker=>worker.username == "Elwyn.Skiles")
+workers.splice(removeUser, 1)
+console.log(workers)
