@@ -242,13 +242,14 @@ const workers=[
 // let worker = workers.find(element=>element.company.name == "Robel-Corkery")
 // console.log(worker)
 
-//sort users by username
+// //sort workers by username
 
-const sorted = workers.sort((a,b)=> {
-  return a.username.localeCompare(b.username)
-})
+// const sorted = workers.sort((a,b)=> {
+//   return a.username.localeCompare(b.username)
+// })
 
-console.log(sorted)
+// console.log(sorted)
 
-
-
+// workers whose lat is greater than zero
+let greaterThanZero = workers.filter(user => user.address.geo.lat > 0)
+console.log(greaterThanZero)
